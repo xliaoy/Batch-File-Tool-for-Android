@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/neumorphic_bg">
+
+    <!-- Page container -->
+    <FrameLayout
+        android:id="@+id/pageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include
+            android:id="@+id/pagePermission"
+            layout="@layout/setup_page_permission"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/pageDirectory"
+            layout="@layout/setup_page_directory"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/pageLanguage"
+            layout="@layout/setup_page_language"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/pageWelcome"
+            layout="@layout/setup_page_welcome"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Bottom nav bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/neumorphic_card">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/previous"
+            android:textColor="@color/text_secondary"
+            android:background="@drawable/neumorphic_button_selector"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/next"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/neumorphic_button_selector" />
+
+    </LinearLayout>
+
+    <!-- Dot indicators -->
+    <LinearLayout
+        android:id="@+id/dotIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>

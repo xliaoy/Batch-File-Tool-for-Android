@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 夫 上半: two \ / slashes -->
+    <path
+        android:fillColor="#FF1A1A1A"
+        android:strokeColor="#FF1A1A1A"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M36,62 L54,26 L72,62" />
+    <!-- 夫 first horizontal -->
+    <path
+        android:fillColor="#FF1A1A1A"
+        android:strokeColor="#FF1A1A1A"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M28,62 L80,62" />
+    <!-- 夫 second horizontal -->
+    <path
+        android:fillColor="#FF1A1A1A"
+        android:strokeColor="#FF1A1A1A"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M32,70 L76,70" />
+    <!-- 曰 outer box -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FF1A1A1A"
+        android:strokeWidth="4.5"
+        android:strokeLineJoin="round"
+        android:pathData="M36,78 L72,78 L72,98 L36,98 Z" />
+    <!-- 曰 inner dash -->
+    <path
+        android:fillColor="#FF1A1A1A"
+        android:strokeColor="#FF1A1A1A"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M39,88 L69,88" />
+</vector>
